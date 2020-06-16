@@ -1,27 +1,26 @@
 
- class RemoveSmallNum {
-	
+ class RemoveSmallNum {	
 	    public int[] removesmallnum(int[] arr) {
 	        int[] answer = new int[arr.length-1];
 	        int min;
-	        int count=0;
-	       
+	        int count=0;       
 	        
 	    	if( arr.length == 1 ) {
         		return new int[]{-1};
 	    	}
-	    	min = 0;
+	    	//{2,3,4,5,7,6,1,8};
+	    	min = arr[0];//2
 	        for(int i=0; i<arr.length; i++) {    
 	        	if( arr[i] <= min) {        		
 	        		min = arr[i];	        		
-	        		count++;
-	        		System.out.printf("%d",count);
-	        		
-	        		}	 
+	        		count=i;
+	        		System.out.printf("count %d min %d ",count,min);
+	        	}
 	        }
+	        
 	        int num=0;
 	        for(int j=0;j<arr.length;j++) {
-	        	 if(j == count-1) continue;
+	        	 if(j == count) continue;
 	        	    answer[num++] =arr[j];
 	        	    
 	        }	        	        
