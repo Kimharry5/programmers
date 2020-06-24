@@ -4,17 +4,12 @@
 	        String answer = "";
 	        String[] s_array;
 	        s_array=s.split("");
-	        for (int i = 0; i < s.length(); i++) {
-				
-				//System.out.printf("%s",s_array[i]);
-			}
-	        
-	        for (int i = 0; i < s_array.length; i++) {
-				if(s.length() % 2 != 0)
-					answer = s_array[(s.length()/2)];
-				else
-					answer = s_array[(s.length())/2-1].concat(s_array[s.length()/2]);
-			}
+	         
+			if(s.length() % 2 != 0)
+				answer = s_array[(s.length()/2)];
+			else
+				answer = s_array[(s.length())/2-1].concat(s_array[s.length()/2]);
+		 
 	        return answer;
 	    }
 	
