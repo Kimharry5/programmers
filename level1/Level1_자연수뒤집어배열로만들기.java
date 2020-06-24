@@ -18,6 +18,25 @@ class Level1_자연수뒤집어배열로만들기 {
 				answer[j]=list.get(j);
 			}
 	        return answer;
+//	        class Solution {
+//	        	  public int[] solution(long n) {
+//	        	        ArrayList<Integer> list = new ArrayList<>();
+//
+//	        	        while(n!=0){
+//	        	            long val = n%10;
+//	        	            list.add((int)val);
+//	        	            n = n/10;
+//	        	        }
+//
+//	        	        int[] ans = new int[list.size()];
+//
+//	        	        for(int i =0;i<list.size();i++){
+//	        	            ans[i] = list.get(i);
+//	        	        }
+//
+//	        	      return ans;
+//	        	  }
+//	        	}
 	    }	
 
 	public static void main(String[] args) {
